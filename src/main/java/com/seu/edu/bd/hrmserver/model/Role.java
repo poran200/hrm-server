@@ -1,9 +1,12 @@
 package com.seu.edu.bd.hrmserver.model;
 
 public enum Role {
-    DEPUTY_REGISTRAR,
+    DEPUTY_REGISTRAR_Academic,
     ADMISSION_OFFICER,
     EXAM_OFFICER,
     COORDINATOR,
-    HR_DEPUTY_REGISTRAR
+    DEPUTY_REGISTRAR_HRM,
+    STUDENT,
+    Faculty,
+    NO_ROLE
 }
