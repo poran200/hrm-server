@@ -37,7 +37,7 @@ public class EmployeeController {
         return  ResponseEntity.ok().body(employeeService.finByProgram(program));
     }
     @PostMapping(value = "")
-    public ResponseEntity<Employee> create(Employee employee){
+    public ResponseEntity<Employee> create( @RequestBody Employee employee){
         try {
             return ResponseEntity.ok().body(employeeService.create(employee));
         } catch (ResourseAlreadyExist resourseAlreadyExist) {
